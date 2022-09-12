@@ -1,0 +1,11 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "sam-app-swagger"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-lolf8bz4v55j"
+s3_prefix = "sam-app-swagger"
+region = "us-east-1"
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "SwaggerS3File=\"s3://poprahul-demos-1/swagger.yaml\""
+image_repositories = []
